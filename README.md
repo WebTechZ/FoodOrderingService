@@ -3,7 +3,7 @@
 # ชื่อระบบ Food Ordering Service
 
 # ชื่อสมาชิกในกลุ่ม
-นายธนกฤต ญาณนาม Panggundam00
+นายธนกฤต ญาณนาม 6110400653 Panggundam00
 
 
 # Feature
