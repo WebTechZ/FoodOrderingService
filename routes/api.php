@@ -2,6 +2,7 @@
 
 //use App\Http\Controllers\MenusController;
 use App\Http\Controllers\API\MenusController;
+use App\Http\Controllers\API\OrdersController;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -51,4 +52,8 @@ Route::post('/addMenus', function (Request $request){
 
 Route::name('api')->group(function (){
     Route::apiResource('/menus', MenusController::class) ;
+});
+
+Route::name('api')->group(function (){
+    Route::apiResource('/orders', OrdersController::class) ;
 });
