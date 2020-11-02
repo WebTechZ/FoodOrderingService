@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class OrderController extends Controller
+class AddMenuController extends Controller
 {
     public function index(){
-        return view('pages.order') ;
+        return view('pages.addMenu') ;
     }
 }

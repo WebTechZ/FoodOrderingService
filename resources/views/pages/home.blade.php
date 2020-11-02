@@ -9,29 +9,24 @@
         <tr>
             <th scope="col">No.</th>
             <th scope="col">Number Of Customer</th>
-            <th scope="col">Get In Time</th>
             <th scope="col">Status</th>
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>4</td>
-            <td>14:00</td>
-            <td>Eating</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>2</td>
-            <td>14:30</td>
-            <td>Ordering</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>5</td>
-            <td>14:35</td>
-            <td>Checking Out</td>
-        </tr>
+
+        @foreach($tables as $table)
+            <tr @if($table->reserve_status) bgcolor="#d3d3d3" @endif>
+                <th scope="row">{{ $table->table_number }}</th>
+                <td>{{ $table->number_of_customer }}</td>
+                @if($table->reserve_status)
+                    <td>Not Available</td>
+                @endif
+                @if($table->reserve_status == false)
+                    <td>Available</td>
+                @endif
+            </tr>
+        @endforeach
+
         </tbody>
     </table>
 

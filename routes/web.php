@@ -1,10 +1,17 @@
 <?php
 
+use App\Http\Controllers\AddMenuController;
 use App\Http\Controllers\EditMenuController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\OrderController;
+use App\Http\Controllers\MenusController;
+use App\Http\Controllers\OrderPageController;
+use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\TableController;
+//use App\Http\Controllers\OrderController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +25,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/home');
 });
-Route::get('/login', [LoginController::class, 'index']) ;
-Route::get('/home', [HomeController::class, 'index']) ;
-Route::get('/editMenu', [EditMenuController::class, 'index']) ;
-Route::get('/order', [OrderController::class, 'index']) ;
+Route::get('/', [LoginController::class, 'index']) ;
+//Route::get('/home', [HomeController::class, 'index']) ;
+Route::middleware(['auth:sanctum', 'verified'])->get('/editMenu', [EditMenuController::class, 'index']) ;
+Route::middleware(['auth:sanctum', 'verified'])->get('/order', [OrdersController::class, 'index']) ;
+Route::middleware(['auth:sanctum', 'verified'])->get('/addMenu', [AddMenuController::class, 'index']) ;
+
+Route::get('/logout', function (){
+    Auth::logout();
+    return redirect('/login');
+}) ;
 
 
+Route::middleware(['auth:sanctum', 'verified'])->resource('/menus', MenusController::class) ;
+Route::middleware(['auth:sanctum', 'verified'])->resource('/home', TableController::class) ;
+
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return redirect('/home');
+}) ;
