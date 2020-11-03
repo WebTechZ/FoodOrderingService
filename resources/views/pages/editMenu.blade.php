@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Add Menu</h1>
+    <h1>Edit Menu</h1>
 
     <form action="{{ route('menus.update', ['menu' => $menu->id]) }}" method="POST">
         @method('PUT')
