@@ -6,9 +6,20 @@
 
     <form action="{{ route('menus.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
+{{--        <div class="form-group">--}}
+{{--            <label for="menu_id">ID</label>--}}
+{{--            <input type="text" class="form-control" id="menu_id" name="menu_id" required>--}}
+{{--        </div>--}}
         <div class="form-group">
-            <label for="menu_id">ID</label>
-            <input type="text" class="form-control" id="menu_id" name="menu_id" required>
+            <label for="typeype">Food Type</label>
+            <select class="form-control" id="type" name="type">
+                <option>Rices</option>
+                <option>Noodles</option>
+                <option>Hot Dishes</option>
+                <option>Appetizers</option>
+                <option>Sushi</option>
+                <option>Beverages</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="menu_name">Name</label>
@@ -27,7 +38,34 @@
         </div>
         <div class="form-group">
             <label for="file">Select Image</label>
-            <input type="file" class="form-control-file" id="file" name="file">
+            <input type="file" class="form-control-file" id="file" name="file" onchange="Filevalidation()">
+            <p id="size"></p>
+
+            <script>
+                Filevalidation = () => {
+                    const fi = document.getElementById('file');
+                    // Check if any file is selected.
+                    if (fi.files.length > 0) {
+                        for (let i = 0; i <= fi.files.length - 1; i++) {
+
+                            const fsize = fi.files.item(i).size;
+                            const file = Math.round((fsize / 1024));
+                            console.log(file) ;
+                            document.getElementById('size').innerHTML = '<b>'
+                                + file + '</b> KB';
+                            // The size of the file.
+                            if (file >= 45) {
+                                document.getElementById('file').innerHTML = ''
+                                alert(
+                                    "File too Big, please select a file less than 45kb");
+                            } else {
+                                document.getElementById('size').innerHTML = '<b>'
+                                    + file + '</b> KB';
+                            }
+                        }
+                    }
+                }
+            </script>
         </div>
 
     <button class="btn btn-success">Confirm</button>

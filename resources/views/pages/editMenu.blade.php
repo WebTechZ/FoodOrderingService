@@ -34,7 +34,36 @@
         </div>
         <div class="form-group">
             <label for="file">Select Image</label>
-            <input type="file" class="form-control-file" id="file" name="file">
+            <input type="file" class="form-control-file" id="file" name="file" onchange="Filevalidation()">
+            <p id="size"></p>
+
+            <script>
+                Filevalidation = () => {
+                    const fi = document.getElementById('file');
+                    // Check if any file is selected.
+                    if (fi.files.length > 0) {
+                        for (let i = 0; i <= fi.files.length - 1; i++) {
+
+                            const fsize = fi.files.item(i).size;
+                            const file = Math.round((fsize / 1024));
+                            console.log(file) ;
+                            document.getElementById('size').innerHTML = '<b>'
+                                + file + '</b> KB';
+                            // The size of the file.
+                            if (file >= 45) {
+                                document.getElementById('file').innerHTML = ''
+                                alert(
+                                    "File too Big, please select a file less than 4mb");
+                            } else {
+                                document.getElementById('size').innerHTML = '<b>'
+                                    + file + '</b> KB';
+                            }
+                        }
+                    }
+                }
+            </script>
+
+
         </div>
 
         <button type="submit" class="btn btn-warning">Edit</button>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Table;
 use Illuminate\Http\Request;
 
 class TableController extends Controller
@@ -28,6 +29,18 @@ class TableController extends Controller
         //
     }
 
+    public function getTableStatus($id){
+        $table = Table::findOrFail($id) ;
+        return $table->isInit ;
+    }
+
+    public function inItTable($id){
+        $table = Table::findOrFail($id) ;
+        $table->isInit = 1 ;
+        $table->save() ;
+        return $table->isInit ;
+    }
+
     /**
      * Display the specified resource.
      *
@@ -46,9 +59,35 @@ class TableController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function checkIn(Request $request, $id){
+//        return $request ;
+        $table = Table::findOrFail($id) ;
+        $table->number_of_customer = $request->input('numCus') ;
+        $table->reserve_status = true ;
+        $table->save() ;
+        return $table ;
+    }
+
+    public function checkOut($id){
+        $table = Table::findOrFail($id) ;
+        $table->number_of_customer = 0 ;
+        $table->reserve_status = false ;
+        $table->save() ;
+        return $table ;
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function update(Request $request, $id)
     {
-        //
+//        $table = Table::findById($id) ;
+//        $table->
     }
 
     /**

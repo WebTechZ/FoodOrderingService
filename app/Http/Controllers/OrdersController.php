@@ -77,7 +77,11 @@ class OrdersController extends Controller
      */
     public function update(Request $request, Order $order)
     {
-        //
+//        $order = Order::findById($id) ;
+        $order->status = 'complete' ;
+        $order->save() ;
+//        return $order ;
+        return redirect(route('order.index')) ;
     }
 
     /**
@@ -86,8 +90,12 @@ class OrdersController extends Controller
      * @param \App\Models\Order $order
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Order $order)
+    public function destroy($id)
     {
-        //
+        $order = Order::findOrFail($id) ;
+        $order->status = 'complete' ;
+        $order->save() ;
+//        return $order ;
+        return redirect(route('order.index')) ;
     }
 }

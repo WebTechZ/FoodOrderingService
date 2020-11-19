@@ -14,7 +14,7 @@ class MenusController extends Controller
      */
     public function index()
     {
-        $menus = Menu::get();
+        $menus = Menu::orderBy('menu_id', 'ASC')->get();
         return view('pages.menu', [
             'menus' => $menus
         ]) ;
@@ -40,7 +40,36 @@ class MenusController extends Controller
     {
 //        return $request->all() ;
         $menu = new Menu ;
-        $menu->menu_id = $request->input('menu_id') ;
+//        $menu->menu_id = $request->input('menu_id') ;
+//        return $request ;
+        if($request->input('type') == 'Rices'){
+            $tempMenu = Menu::orderBy('menu_id', 'DESC')->where('menu_id', 'like', '%A%')->get() ;
+            if ($tempMenu->count() > 0){
+                $i = $tempMenu->first()->menu_id ;
+                $rawID = str_replace('A', '', $i) ;
+                $id = strval($rawID) ;
+                $id++ ;
+                $menu->menu_id = 'A'.$id ;
+            }
+            else{
+                $menu->menu_id = 'A1' ;
+            }
+        }
+        elseif ($request->input('type') == 'Noodles'){
+
+        }
+        elseif ($request->input('type') == 'Hot Dishes'){
+
+        }
+        elseif ($request->input('type') == 'Appetizers'){
+
+        }
+        elseif ($request->input('type') == 'Sushi'){
+
+        }
+        elseif ($request->input('type') == 'Beverages'){
+
+        }
         if ($request->input('menu_status') == 'Yes'){
             $menu->menu_status = true ;
         }

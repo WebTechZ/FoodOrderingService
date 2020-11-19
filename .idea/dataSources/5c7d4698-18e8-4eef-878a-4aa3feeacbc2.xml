@@ -1308,75 +1308,80 @@ tokenable_id</ColNames>
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <key id="374" parent="296" name="PRIMARY">
+    <column id="374" parent="296" name="isInit">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="375" parent="296" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="375" parent="297" name="id">
+    <column id="376" parent="297" name="id">
       <Position>1</Position>
       <DataType>bigint unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="376" parent="297" name="name">
+    <column id="377" parent="297" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="377" parent="297" name="email">
+    <column id="378" parent="297" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="378" parent="297" name="email_verified_at">
+    <column id="379" parent="297" name="email_verified_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="379" parent="297" name="password">
+    <column id="380" parent="297" name="password">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="380" parent="297" name="two_factor_secret">
+    <column id="381" parent="297" name="two_factor_secret">
       <Position>6</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="381" parent="297" name="two_factor_recovery_codes">
+    <column id="382" parent="297" name="two_factor_recovery_codes">
       <Position>7</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="382" parent="297" name="remember_token">
+    <column id="383" parent="297" name="remember_token">
       <Position>8</Position>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="383" parent="297" name="current_team_id">
+    <column id="384" parent="297" name="current_team_id">
       <Position>9</Position>
       <DataType>bigint unsigned|0s</DataType>
     </column>
-    <column id="384" parent="297" name="profile_photo_path">
+    <column id="385" parent="297" name="profile_photo_path">
       <Position>10</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="385" parent="297" name="created_at">
+    <column id="386" parent="297" name="created_at">
       <Position>11</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="386" parent="297" name="updated_at">
+    <column id="387" parent="297" name="updated_at">
       <Position>12</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="387" parent="297" name="users_email_unique">
+    <index id="388" parent="297" name="users_email_unique">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="388" parent="297" name="PRIMARY">
+    <key id="389" parent="297" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="389" parent="297" name="users_email_unique">
+    <key id="390" parent="297" name="users_email_unique">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
     </key>

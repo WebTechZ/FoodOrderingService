@@ -3,6 +3,7 @@
 //use App\Http\Controllers\MenusController;
 use App\Http\Controllers\API\MenusController;
 use App\Http\Controllers\API\OrdersController;
+use App\Http\Controllers\API\TableController;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -54,8 +55,15 @@ Route::name('api')->group(function (){
     Route::get('/menus/search/{menu_id}', [MenusController::class, 'search']);
     Route::get('/menus/getAll', [MenusController::class, 'getAllMenu']) ;
     Route::apiResource('/menus', MenusController::class) ;
+    Route::get('/menus/searchNoImage/{menu_id}', [MenusController::class, 'searchNoImage']) ;
 });
 
 Route::name('api')->group(function (){
     Route::apiResource('/orders', OrdersController::class) ;
+    Route::get('/orders/getByTable/{table_number}', [OrdersController::class, 'getOrderByTable']) ;
+    Route::apiResource('/tables', TableController::class) ;
+    Route::put('/tables/checkin/{id}', [TableController::class, 'checkIn']) ;
+    Route::get('/tables/checkout/{id}', [TableController::class, 'checkOut']) ;
+    Route::get('/tables/getStatus/{id}', [TableController::class, 'getTableStatus']) ;
+    Route::get('/tables/initTable/{id}', [TableController::class, 'inItTable']) ;
 });

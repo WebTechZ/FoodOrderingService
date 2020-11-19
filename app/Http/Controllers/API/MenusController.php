@@ -15,7 +15,7 @@ class MenusController extends Controller
      */
     public function index()
     {
-        $menus = Menu::get();
+        $menus = Menu::orderBy('menu_id', 'ASC')->get();
         return $menus ;
 ////        $tempMenus[] = array() ;
 //        foreach ($menus as $menu) {
@@ -38,19 +38,23 @@ class MenusController extends Controller
     }
 
     public function getAllMenu(){
-        $menus = Menu::get();
+        $menus = Menu::orderBy('menu_id', 'ASC')->get();
+        $count = 0 ;
         foreach ($menus as $menu){
-            $allID[] = $menu->menu_id ;
+            if($menu->menu_status){
+                $allID[] = $menu->menu_id ;
+                $count++ ;
+            }
         }
         return [
-            'count' => $menus->count(),
+            'count' => $count,
             'allID' => $allID
         ] ;
     }
 
     public function search($menu_id){
 //        return $menu_id ;
-        $menus = Menu::get()->where('menu_id', $menu_id) ;
+        $menus = Menu::orderBy('menu_id', 'ASC')->get()->where('menu_id', $menu_id) ;
 //        foreach ($menus as $menu) {
 //            $tempMenu = new Menu() ;
 //            $tempMenus[] = $menu ;
@@ -62,6 +66,28 @@ class MenusController extends Controller
 //        }
 //        return $menus->count() ;
         return $menus ;
+    }
+
+    public function searchNoImage($menu_id){
+//        return $menu_id ;
+        $menus = Menu::orderBy('menu_id', 'ASC')->get()->where('menu_id', $menu_id) ;
+        foreach ($menus as $menu){
+            $tempMenu = new Menu() ;
+            $tempMenu->menu_name = $menu->menu_name ;
+            $tempMenu->price = $menu->price ;
+            $orderList[] = $tempMenu ;
+        }
+//        foreach ($menus as $menu) {
+//            $tempMenu = new Menu() ;
+//            $tempMenus[] = $menu ;
+//            $path = $menu->image ;
+//            $logo = file_get_contents($path);
+//            $base64 = base64_encode($logo);
+////            $tempMenus[] = $menu->menu_id ;
+//            $tempMenus[] = $base64 ;
+//        }
+//        return $menus->count() ;
+        return $orderList ;
     }
 
     /**

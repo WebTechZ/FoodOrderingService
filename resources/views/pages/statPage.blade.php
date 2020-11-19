@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>Statistic</h1>
+    <h1>Order History</h1>
 
     <table class="table">
         <thead>

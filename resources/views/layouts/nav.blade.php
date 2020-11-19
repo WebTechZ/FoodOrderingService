@@ -7,23 +7,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/home') }}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/home') }}" onMouseOver="this.style.color='#B7B7B7'"
+                   onMouseOut="this.style.color='#000000'">Home <span class="sr-only">(current)</span></a>
             </li>
             @auth
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/menus') }}">Edit Menu <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/menus') }} " onMouseOver="this.style.color='#B7B7B7'"
+                   onMouseOut="this.style.color='#000000'">Edit Menu <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/order') }}">Order <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/order') }}" onMouseOver="this.style.color='#B7B7B7'"
+                   onMouseOut="this.style.color='#000000'">Order <span class="sr-only">(current)</span></a>
             </li>
 
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{ url('/stat') }}">Statistic <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{ url('/stat') }}" onMouseOver="this.style.color='#B7B7B7'"
+                       onMouseOut="this.style.color='#000000'">Order History <span class="sr-only">(current)</span></a>
                 </li>
 
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/logout') }}">Logout <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/logout') }}" onMouseOver="this.style.color='#B7B7B7'"
+                   onMouseOut="this.style.color='#000000'">Logout <span class="sr-only">(current)</span></a>
             </li>
             @endauth
 

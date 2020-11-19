@@ -23,21 +23,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c7d4698-18e8-4eef-878a-4aa3feeacbc2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c7d4698-18e8-4eef-878a-4aa3feeacbc2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/MenusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MenusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TableController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenusController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_081531_create_menus_teble.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_081531_create_menus_teble.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_140938_create_tables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_140938_create_tables_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_02_085017_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_02_085017_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/addMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/addMenu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/editMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/editMenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/menu.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/orderPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/orderPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/statPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/statPage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +224,7 @@
       <workItem from="1605170816776" duration="680000" />
       <workItem from="1605252061946" duration="7881000" />
       <workItem from="1605511213097" duration="15211000" />
-      <workItem from="1605755886515" duration="4372000" />
+      <workItem from="1605755886515" duration="24384000" />
     </task>
     <servers />
   </component>
@@ -264,10 +261,14 @@
     </state>
     <state x="622" y="323" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.811@0.23.1440.811" timestamp="1604314582943" />
     <state x="622" y="325" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.816@0.23.1440.816" timestamp="1601308218666" />
-    <state x="458" y="232" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605429371948">
+    <state x="458" y="232" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605807068102">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="458" y="232" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1440.811@0.23.1440.811" timestamp="1605429371948" />
+    <state x="458" y="232" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1440.811@0.23.1440.811" timestamp="1605807068102" />
+    <state x="565" y="201" width="457" height="439" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1605807256935">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="565" y="201" width="457" height="439" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.23.1440.811@0.23.1440.811" timestamp="1605807256935" />
     <state x="794" y="23" width="619" height="792" key="dock-window-1" timestamp="1604348208913">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
@@ -276,10 +277,10 @@
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.23.1440.811@0.23.1440.811" timestamp="1605602042196" />
-    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup" timestamp="1605424896556">
+    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup" timestamp="1605779602623">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1605424896556" />
+    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1605779602623" />
     <state x="385" y="163" width="670" height="676" key="search.everywhere.popup/0.23.1440.816@0.23.1440.816" timestamp="1602058336872" />
   </component>
 </project>
