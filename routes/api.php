@@ -51,6 +51,8 @@ Route::post('/addMenus', function (Request $request){
 //Route::delete('/deleteMenus/{id}', [MenusController::class, 'destroy']) ;
 
 Route::name('api')->group(function (){
+    Route::get('/menus/search/{menu_id}', [MenusController::class, 'search']);
+    Route::get('/menus/getAll', [MenusController::class, 'getAllMenu']) ;
     Route::apiResource('/menus', MenusController::class) ;
 });
 

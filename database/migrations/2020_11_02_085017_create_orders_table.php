@@ -17,9 +17,9 @@ class CreateOrdersTable extends Migration
             $table->id();
             $table->string('menu_id') ;
             $table->integer('table_number') ;
-            $table->string('status')->nullable(true) ;
+            $table->string('status')->default('cooking') ;
             $table->timestamps();
-            $table->softDeletes() ;
+            $table->softDeletes('deleted_at') ;
         });
     }
 

@@ -20,8 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7667933-ccfb-476d-af0f-7acadd1dd546" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c7d4698-18e8-4eef-878a-4aa3feeacbc2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c7d4698-18e8-4eef-878a-4aa3feeacbc2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/MenusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MenusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenusController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_081531_create_menus_teble.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_081531_create_menus_teble.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_30_140938_create_tables_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_30_140938_create_tables_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_02_085017_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_02_085017_create_orders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/addMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/addMenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/editMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/editMenu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/menu.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/orderPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/orderPage.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +225,9 @@
       <workItem from="1604043426014" duration="37553000" />
       <workItem from="1604364642135" duration="5423000" />
       <workItem from="1605170816776" duration="680000" />
-      <workItem from="1605252061946" duration="880000" />
+      <workItem from="1605252061946" duration="7881000" />
+      <workItem from="1605511213097" duration="15211000" />
+      <workItem from="1605755886515" duration="4372000" />
     </task>
     <servers />
   </component>
@@ -233,10 +251,10 @@
       <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="320" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.816@0.23.1440.816" timestamp="1601307914906" />
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604358629340">
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605764354918">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.811@0.23.1440.811" timestamp="1604358629340" />
+    <state x="458" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.811@0.23.1440.811" timestamp="1605764354918" />
     <state x="580" y="307" width="456" height="232" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1601308194366">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
@@ -246,14 +264,22 @@
     </state>
     <state x="622" y="323" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.811@0.23.1440.811" timestamp="1604314582943" />
     <state x="622" y="325" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.23.1440.816@0.23.1440.816" timestamp="1601308218666" />
+    <state x="458" y="232" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog" timestamp="1605429371948">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="458" y="232" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.23.1440.811@0.23.1440.811" timestamp="1605429371948" />
     <state x="794" y="23" width="619" height="792" key="dock-window-1" timestamp="1604348208913">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
     <state x="794" y="23" width="619" height="792" key="dock-window-1/0.23.1440.811@0.23.1440.811" timestamp="1604348208913" />
-    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup" timestamp="1604054944481">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1605602042196">
       <screen x="0" y="23" width="1440" height="811" />
     </state>
-    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1604054944481" />
+    <state width="600" height="428" key="javadoc.popup/0.23.1440.811@0.23.1440.811" timestamp="1605602042196" />
+    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup" timestamp="1605424896556">
+      <screen x="0" y="23" width="1440" height="811" />
+    </state>
+    <state x="385" y="162" width="670" height="672" key="search.everywhere.popup/0.23.1440.811@0.23.1440.811" timestamp="1605424896556" />
     <state x="385" y="163" width="670" height="676" key="search.everywhere.popup/0.23.1440.816@0.23.1440.816" timestamp="1602058336872" />
   </component>
 </project>

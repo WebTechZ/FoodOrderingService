@@ -4,7 +4,7 @@
 
     <h1>Edit Menu</h1>
 
-    <form action="{{ route('menus.update', ['menu' => $menu->id]) }}" method="POST">
+    <form action="{{ route('menus.update', ['menu' => $menu->id]) }}" method="POST" enctype="multipart/form-data">
         @method('PUT')
         @csrf
         <h3>ID: {{ $menu->menu_id }}</h3>
@@ -31,6 +31,10 @@
                     <option>Yes</option>
                 @endif
             </select>
+        </div>
+        <div class="form-group">
+            <label for="file">Select Image</label>
+            <input type="file" class="form-control-file" id="file" name="file">
         </div>
 
         <button type="submit" class="btn btn-warning">Edit</button>

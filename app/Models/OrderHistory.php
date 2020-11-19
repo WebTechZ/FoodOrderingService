@@ -6,12 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Menu extends Model
+class OrderHistory extends Model
 {
-    use HasFactory, SoftDeletes;
-
-//    public static function where(string $string, int $int)
-//    {
-//        if(this->Model::)
-//    }
+    use HasFactory,SoftDeletes;
 }

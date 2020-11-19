@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h1>All Order</h1>
+    <h1>Statistic</h1>
 
     <table class="table">
         <thead>
@@ -21,7 +21,7 @@
                 <th scope="row">{{ $order->id }}</th>
                 <td>{{ $order->table_number }}</td>
                 <td>{{ $order->menu_id }}</td>
-                <td>{{ $order->created_at->diffForHumans() }}</td>
+                <td>{{ $order->order_time }}</td>
                 <td>{{ $order->status }}</td>
             </tr>
         @endforeach

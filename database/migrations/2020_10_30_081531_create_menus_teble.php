@@ -20,6 +20,7 @@ class CreateMenusTeble extends Migration
             $table->string('menu_name')->nullable(false) ;
             $table->float('price')->default(0) ;
             $table->string('recipe')->default("") ;
+            $table->binary('image')->nullable(true) ;
             $table->timestamps();
             $table->softDeletes('deleted_at') ;
         });

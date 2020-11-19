@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTablesTable extends Migration
+class CreateOrderHistoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateTablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('tables', function (Blueprint $table) {
+        Schema::create('order_histories', function (Blueprint $table) {
             $table->id();
             $table->integer('table_number')->nullable(false) ;
-            $table->integer('number_of_customer')->default(0) ;
-            $table->boolean('reserve_status')->default(false) ;
-            $table->timestamp('time_in')->default(null) ;
+            $table->string('menu_id')->nullable(false) ;
+            $table->timestamp('order_time') ;
+            $table->string('status')->default('complete') ;
             $table->timestamps();
             $table->softDeletes('deleted_at') ;
         });
@@ -31,6 +31,6 @@ class CreateTablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tables');
+        Schema::dropIfExists('order_histories');
     }
 }

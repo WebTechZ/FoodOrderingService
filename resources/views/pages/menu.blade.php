@@ -16,6 +16,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Price</th>
                 <th scope="col">Menu Status</th>
+                <th scope="col">Image</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
             </tr>
@@ -34,6 +35,7 @@
                     @if($menu->menu_status == 0)
                         <td>No</td>
                     @endif
+                    <td><img src="data:image/;base64,{{ $menu->image }}" style="width: 250px;height: 150px"></td>
                     <td>
                         <a href="{{ route('menus.edit', ['menu' => $menu->id]) }}">
                             <button class="btn btn-warning">Edit</button>

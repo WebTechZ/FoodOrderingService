@@ -18,6 +18,10 @@
                 <a class="nav-link" href="{{ url('/order') }}">Order <span class="sr-only">(current)</span></a>
             </li>
 
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url('/stat') }}">Statistic <span class="sr-only">(current)</span></a>
+                </li>
+
             <li class="nav-item active">
                 <a class="nav-link" href="{{ url('/logout') }}">Logout <span class="sr-only">(current)</span></a>
             </li>

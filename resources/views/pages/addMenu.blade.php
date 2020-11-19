@@ -4,7 +4,7 @@
 
     <h1>Add Menu</h1>
 
-    <form action="{{ route('menus.store') }}" method="POST">
+    <form action="{{ route('menus.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label for="menu_id">ID</label>
@@ -24,6 +24,10 @@
                 <option>Yes</option>
                 <option>No</option>
             </select>
+        </div>
+        <div class="form-group">
+            <label for="file">Select Image</label>
+            <input type="file" class="form-control-file" id="file" name="file">
         </div>
 
     <button class="btn btn-success">Confirm</button>
