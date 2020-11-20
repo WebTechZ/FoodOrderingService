@@ -7,7 +7,7 @@
     <a href="{{ url('/addMenu') }}">
         <button class="btn btn-info">Add</button>
         <a/>
-        </p>
+{{--        </p>--}}
 
         <table class="table">
             <thead>

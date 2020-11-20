@@ -20,21 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7667933-ccfb-476d-af0f-7acadd1dd546" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5c7d4698-18e8-4eef-878a-4aa3feeacbc2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5c7d4698-18e8-4eef-878a-4aa3feeacbc2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/MenusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/MenusController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/OrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TableController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/TableController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MenusController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MenusController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/addMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/addMenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/editMenu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/editMenu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/orderPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/orderPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/statPage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/statPage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +210,7 @@
       <workItem from="1605170816776" duration="680000" />
       <workItem from="1605252061946" duration="7881000" />
       <workItem from="1605511213097" duration="15211000" />
-      <workItem from="1605755886515" duration="24384000" />
+      <workItem from="1605755886515" duration="25451000" />
     </task>
     <servers />
   </component>
