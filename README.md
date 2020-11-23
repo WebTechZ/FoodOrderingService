@@ -26,6 +26,12 @@
 
 # เงื่อนไขสำหรับผู้พัฒนาและผู้ติดตั้งระบบที่ต้องทราบ
 - database ชื่อ FoodOrderingService มี schema ชื่อ data เป็น schema หลักของตาราง
-- ตาราง tables ใช้เก็บข้อมูลโต็ะในร้าน
+- ตาราง tables ใช้เก็บข้อมูลโต๊ะในร้าน
 - ตาราง orders ใช้เก็บข้อมูล order ที่ลูกค้าสั่ง
 - ตาราง menus ใช้เก็บข้อมูล menu ทั้งหมด
+- ตาราง orders_history ใช้เก็บข้อมูล order ทั้งหมดหลังจากที่ทำการ checkbill
+- อธิบาย class ที่ java เรียกใช้ในไฟล์ ApiController.java
+    - method getMethod ใช้ในการเรียก get api โดยใส่ parameter คือ link ของ api ที่ใช้เรียก จะ return ค่าออกมาเป็น string ใน format json
+    - method postMethod ใช้ในการเรียก post api โดยใส่ parameter 2 ตัว คือ 1.link ของ api ที่จะเรียก   2.data ของ request ที่จะส่งไป โดยจะส่งไปเป็น string ที่เป็น format json
+    - method putMethod ใช้ในการเรียก put/patch api โดยใส่ parameter 2 ตัว คือ 1.link ของ api ที่จะเรียก   2.data ของ request ที่จะส่งไป โดยจะส่งไปเป็น string ที่เป็น format json
+    - method deleteMethod ใช้ในการเรียก delete api โดยใส่ parameter คือ link ของ api ที่จะเรียก
