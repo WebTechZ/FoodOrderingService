@@ -17,24 +17,7 @@ class MenusController extends Controller
     {
         $menus = Menu::orderBy('menu_id', 'ASC')->get();
         return $menus ;
-////        $tempMenus[] = array() ;
-//        foreach ($menus as $menu) {
-//            $tempMenu = new Menu() ;
-//            $tempMenus[] = $menu ;
-//            $path = $menu->image ;
-//            $logo = file_get_contents($path);
-//            $base64 = base64_encode($logo);
-////            $tempMenus[] = $menu->menu_id ;
-//            $tempMenus[] = $base64 ;
-//        }
-////        foreach ($menus as $menu){
-////            $path = $menu->image ;
-////            $logo = file_get_contents($path);
-////            $base64 = base64_encode($logo);
-//////            $tempMenus[] = $menu->menu_id ;
-////            $tempMenus[] = $base64 ;
-////        }
-//        return $tempMenus;
+
     }
 
     public function getAllMenu(){
@@ -55,16 +38,7 @@ class MenusController extends Controller
     public function search($menu_id){
 //        return $menu_id ;
         $menus = Menu::orderBy('menu_id', 'ASC')->get()->where('menu_id', $menu_id) ;
-//        foreach ($menus as $menu) {
-//            $tempMenu = new Menu() ;
-//            $tempMenus[] = $menu ;
-//            $path = $menu->image ;
-//            $logo = file_get_contents($path);
-//            $base64 = base64_encode($logo);
-////            $tempMenus[] = $menu->menu_id ;
-//            $tempMenus[] = $base64 ;
-//        }
-//        return $menus->count() ;
+
         return $menus ;
     }
 

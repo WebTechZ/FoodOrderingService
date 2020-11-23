@@ -42,6 +42,9 @@ Route::get('/logout', function (){
 }) ;
 
 
+//Route::get('/pagelink', 'YourController@callMeDirectlyFromUrl');
+Route::get('/sortMenu/{type}', [MenusController::class, 'sort']) ;
+
 Route::middleware(['auth:sanctum', 'verified'])->resource('/menus', MenusController::class) ;
 Route::middleware(['auth:sanctum', 'verified'])->resource('/home', TableController::class) ;
 Route::middleware(['auth:sanctum', 'verified'])->resource('/order', OrdersController::class) ;

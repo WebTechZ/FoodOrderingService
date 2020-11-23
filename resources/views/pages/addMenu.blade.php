@@ -38,7 +38,7 @@
         </div>
         <div class="form-group">
             <label for="file">Select Image</label>
-            <input type="file" class="form-control-file" id="file" name="file" onchange="Filevalidation()">
+            <input type="file" class="form-control-file" id="file" name="file" onchange="Filevalidation()" required>
             <p id="size"></p>
 
             <script>

@@ -14,7 +14,7 @@ class OrdersController extends Controller
      */
     public function index()
     {
-        $orders = Order::get();
+        $orders = Order::paginate(10);
         return view('pages.orderPage', [
             'orders' => $orders
         ]);

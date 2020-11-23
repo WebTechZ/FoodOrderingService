@@ -34,6 +34,13 @@ class TableController extends Controller
         return $table->isInit ;
     }
 
+    public function clear($id){
+        $table = Table::findOrFail($id) ;
+        $table->isInit = 0 ;
+        $table->save() ;
+        return $table ;
+    }
+
     public function inItTable($id){
         $table = Table::findOrFail($id) ;
         $table->isInit = 1 ;

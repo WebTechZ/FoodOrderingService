@@ -16,7 +16,7 @@ class OrderHistoryController extends Controller
     public function index()
     {
         //
-        $orders = OrderHistory::get() ;
+        $orders = OrderHistory::paginate(10) ;
         return view('pages.statPage', [
             'orders' => $orders
         ]);

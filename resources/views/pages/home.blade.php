@@ -21,7 +21,7 @@
                 @if($table->reserve_status)
                     <td>{{ $table->number_of_customer }}</td>
                     <td>Not Available</td>
-                    <td>{{ $table->time_in }}</td>
+                    <td>{{ $table->updated_at}}</td>
                 @endif
                 @if($table->reserve_status == false)
                     <td>No customer now</td>

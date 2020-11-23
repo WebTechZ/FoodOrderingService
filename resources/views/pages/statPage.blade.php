@@ -16,6 +16,8 @@
         </thead>
         <tbody>
 
+{{--        <br>--}}
+        {{ $orders->links() }}
         @foreach($orders as $order)
             <tr>
                 <th scope="row">{{ $order->id }}</th>

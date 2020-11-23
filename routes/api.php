@@ -66,4 +66,5 @@ Route::name('api')->group(function (){
     Route::get('/tables/checkout/{id}', [TableController::class, 'checkOut']) ;
     Route::get('/tables/getStatus/{id}', [TableController::class, 'getTableStatus']) ;
     Route::get('/tables/initTable/{id}', [TableController::class, 'inItTable']) ;
+    Route::get('/tables/clear/{id}', [TableController::class, 'clear']) ;
 });
