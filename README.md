@@ -35,3 +35,6 @@
     - method postMethod ใช้ในการเรียก post api โดยใส่ parameter 2 ตัว คือ 1.link ของ api ที่จะเรียก   2.data ของ request ที่จะส่งไป โดยจะส่งไปเป็น string ที่เป็น format json
     - method putMethod ใช้ในการเรียก put/patch api โดยใส่ parameter 2 ตัว คือ 1.link ของ api ที่จะเรียก   2.data ของ request ที่จะส่งไป โดยจะส่งไปเป็น string ที่เป็น format json
     - method deleteMethod ใช้ในการเรียก delete api โดยใส่ parameter คือ link ของ api ที่จะเรียก
+- Email และ password สำหรับทดสอบระบบ
+    - Email: admin@mail.com
+    - Password: admin
